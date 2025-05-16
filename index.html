@@ -1,0 +1,1079 @@
+<!-------------------------START OF HTML DOCUMENT------------------------->
+<!DOCTYPE html>
+<!--START OF HTML-->
+<html lang="en">
+  <!--HTML SETTINGS-->
+  <head>
+    <!--CHARACTER ENCODING-->
+    <meta charset="UTF-8" />
+    <!--COMPATIBILITY CHECK INTERNET EXPLORER RENDER-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--VIEWPORT SET RESPONSIVE DEVICE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--TITLE BROWSER TAB-->
+    <title>CV - Personal Website</title>
+    <!--FAVICON BROWSER TAB-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <!--CSS FILE CONNECT AS STYLESHEET-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--GOOGLE FONT FILE CONNECT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--EMAIL CONTACT FORM-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("RR47PkZgETfR8gZTl"); // Replace with your EmailJS public key
+      })();
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <!-------------------------SIDE BAR SECTION------------------------->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <!--PROFILE PICTURE-->
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/96424-09-.JPG"
+              alt="Emre TAMTURK"
+              width="100"
+            />
+          </figure>
+          <div class="info-content">
+            <!--NAME INFO-->
+            <h1 class="name" title="Emre TAMTURK">Emre Ilgın TAMTURK</h1>
+            <!--JOB INFO-->
+            <p class="title">Senior - Technical Business Analyst</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <!-------------------------LIST ITEM SIDE BAR------------------------->
+          <ul class="contacts-list">
+            <!--MAIL INFO-->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  href="mailto:tamturk.emreilgin@gmail.com"
+                  class="contact-link"
+                  >tamturk.emreilgin@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <!--MOBILE INFO-->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Mobile:</p>
+                <a href="tel:+905395834769" class="contact-link"
+                  >+90 (539) 583 47 69</a
+                >
+              </div>
+            </li>
+
+            <!--BIRTHDATE INFO-->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Date of Birth:</p>
+                <time datetime="1982-06-23">March 18, 1996</time>
+              </div>
+            </li>
+
+            <!--LOCATION INFO-->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Bahcelievler, ISTANBUL, TURKEY</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+
+          <!-------------------------SOCIAL CONTACT LIST------------------------->
+          <ul class="social-list">
+            <!--LINKEDIN-->
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/emre-ilg%C4%B1n-tamt%C3%BCrk1996/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <!--GITHUB-->
+            <li class="social-item">
+              <a
+                href="https://github.com/emretamturk"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <!--INSTAGRAM-->
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/emretamturkk/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <!-------------------------NAVIGATION BAR------------------------->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-------------------------ABOUT ME------------------------->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About Me</h2>
+          </header>
+          <!--SELF INTRODUCTION-->
+          <section class="about-text">
+            <p style="text-align: justify">
+              Dear All,
+              <br /><br />
+              I’m excited to introduce myself and share a brief overview of my
+              professional journey. I hold a Bachelor's degree in Electronics
+              Engineering from Kultur University and an MBA from Yıldız
+              Technical University. After working in electronics engineering
+              field for a while, I transitioned my career into the software and
+              computer science field, driven by a passion for continuous
+              learning and contributing to innovative digital solutions.
+            </p>
+
+            <p style="text-align: justify">
+              As a Software Business Analyst, I specialize in requirements
+              gathering, process analysis, and business workflow optimization.I
+              work closely with development teams to align technical solutions
+              with customer needs, using strong analytical thinking and
+              communication skills to drive project success.Additionally, I
+              gained experience in agile software project management and change
+              management processes. I value discipline, consistency, and
+              collaboration, and I believe knowledge sharing and staying current
+              with technology are key to professional growth and delivering
+              long-term value.
+              <br /><br />Best Regards
+            </p>
+          </section>
+          <!--SERVICE-->
+          <section class="service">
+            <h3 class="h3 service-title">Expertise Fields</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">IT Process Management</h4>
+
+                  <p class="service-item-text" style="text-align: left">
+                    Analysis, improves, and helps to manage the workflows and
+                    procedures that govern how IT services are delivered and
+                    maintained within an organization.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                  <p class="service-item-text" style="text-align: left">
+                    Specialized in leveraging data to inform both technical and
+                    business decisions, combining strong business analysis
+                    skills with hands-on experience in data systems and tools
+                    such as SQL and DBMS.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Software Development (SDLC)
+                  </h4>
+
+                  <p class="service-item-text" style="text-align: left">
+                    Participates in the various stages involved in creating,
+                    deploying, and maintaining software. Each step of the SDLC
+                    has different roles and responsibilities.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Customer Management</h4>
+
+                  <p class="service-item-text" style="text-align: left">
+                    Manages customers effectively and building strong
+                    relationships, addressing concerns promptly, and ensuring a
+                    positive experience to drive loyalty and satisfaction.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-------------------------REFERENCES------------------------->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Reference Feedback</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Yagızalp URGANCI"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Yagızalp URGANCI
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Emre was a success and result-oriented colleague who has
+                      worked together in the software company ETIYA. Well
+                      specialized in area of IT service management , data
+                      analysis , project management and i appreciated for his
+                      work discipline and communication skills.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Burak GUNES"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Burak GUNES
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I appreciate Emre, he was an exemplary colleague in terms
+                      of improving himself, acquiring new skills, sharing
+                      knowledge and contributing to the development of other
+                      employees. Doing research together and discussing new
+                      project ideas was a useful process for me in business
+                      life.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Abdulkerim YILDIZOGLU"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Abdulkerim YILDIZOGLU
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Emre has achieved great success in the field of customer
+                      management process improvement in the software industry.
+                      He has always been at the top of our team in terms of
+                      performance. I really like his motivation and human
+                      relations.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Mehmet ARPA"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mehmet ARPA
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I believe that Emre will always be successful in business
+                      life because he is a reliable employee with a sense of
+                      responsibility, respect for human relations and good
+                      communication during the period when I am his manager.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--REFERENCE FEEDBACK MODAL-->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <h5 style="color: white">
+                  <i style="color: var(--orange-yellow-crayola)"
+                    >Software Expert</i
+                  >
+                </h5>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-------------------------SOFTWARE EXPERTISE------------------------->
+          <section class="clients">
+            <h3 class="h3 clients-title">Software Tool Ability</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="https://www.elastic.co/elasticsearch" target="_blank">
+                  <img
+                    src="./assets/images/elasticsearch.230x256.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.postgresql.org/" target="_blank">
+                  <img
+                    src="./assets/images/postgresql.248x256.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.postman.com/" target="_blank">
+                  <img
+                    src="./assets/images/postman.248x256.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.docker.com/" target="_blank">
+                  <img src="./assets/images/docker.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://www.jenkins.io/" target="_blank">
+                  <img src="./assets/images/jenkins.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://m365.cloud.microsoft/" target="_blank">
+                  <img src="./assets/images/office.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="https://drawio-app.com/" target="_blank">
+                  <img
+                    src="./assets/images/drawio.256x253.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a
+                  href="https://www.atlassian.com/software/jira"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/jira.256x256.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a
+                  href="https://www.atlassian.com/software/confluence"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/images/confluence.256x250.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-------------------------EDUCATION------------------------->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Yildiz Technical University - (MBA)
+                </h4>
+                <span>2024 — 2025</span>
+
+                <p class="timeline-text">
+                  Specialized in digital marketing strategies, financial
+                  reports, consumer behavior, data-driven decision-making and
+                  digital transformation in marketing.<br />
+                  <b style="color: white">Final Project:</b> Digital
+                  Transformation over Marketing Channels and CRM <br />
+                  <b style="color: white">GPA:</b> 3.60
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Istanbul Kultur University - (Electronics Engineering)
+                </h4>
+                <span>2014 — 2019</span>
+
+                <p class="timeline-text">
+                  Bachelor's degree in Electronics Engineering with a strong
+                  foundation in analog and digital circuit design, embedded
+                  systems, and signal processing and project management.<br />
+                  <b style="color: white">Final Project:</b> IoT Based Health
+                  Monitoring System<br />
+                  <b style="color: white">GPA:</b> 2.20
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Fusun Yonder Anatolian High School
+                </h4>
+                <span>2010 — 2014</span>
+
+                <p class="timeline-text">
+                  Solid understanding of calculus, physics, and chemistry, which
+                  laid the groundwork for my analytical thinking and
+                  problem-solving abilities.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <!-------------------------EXPERIENCE------------------------->
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Senior Technical Business Analyst
+                </h4>
+                <span>2022 March — Present</span>
+
+                <p class="timeline-text">
+                  Specialized in software analysis, technical documentation,
+                  process modelling and improvement, customer management,
+                  project management, software testing methods, data analysis
+                  and automation, incident and problem management, major
+                  incident management and change management.<br />
+                  <b style="color: white">Project:</b> Telecommunication /
+                  Broadband and Mobile Systems
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Project Engineer</h4>
+                <span>2020 March — 2022 March</span>
+
+                <p class="timeline-text">
+                  Specialized in electronic manufacturing process, supply chain
+                  management, project management, customer management and stock
+                  management and process audit.<br />
+                  <b style="color: white">Project:</b> Electronics / White
+                  Appliances
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">IT Help Desk (Intern)</h4>
+                <span>2018 June — 2018 August</span>
+
+                <p class="timeline-text">
+                  Experienced in software and hardware support to end users. IT
+                  device inventory and access management and technical support
+                  and maintenance.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-------------------------SKILLS------------------------->
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Agile Process Management</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Business Analysis</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">IT Service Management</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Analysis</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Software Testing</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">System Monitoring</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Process Automation RPA</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">UI/UX Modelling</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Customer Management</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!---------------------------PORTFOLIO--------------------------->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <!--PORTFOLIO LIST OF HEADERS-->
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>UI/UX Design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Articles</button>
+              </li>
+            </ul>
+
+            <!--PORTFOLIO PROJECT TYPE SELECT-->
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Mobile Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>UI/UX Design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Articles</button>
+                </li>
+              </ul>
+            </div>
+
+            <!--SHOW ITEMS IN PORTFOLIO-->
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/personalwebsite.png"
+                      alt="Personal Website"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Personal Website</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!---------------------------BLOG--------------------------->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">TEMPLATE</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">1 January, 2025</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Template</h3>
+
+                    <p class="blog-text">Template</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!---------------------------CONTACT--------------------------->
+
+        <!--
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.162985169743!2d28.9714!3d41.0053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9c2aa4a6b17%3A0x552d8ef6f441d15f!2sIstanbul!5e0!3m2!1sen!2str!4v1715784000000"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+        -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.162985169743!2d28.9714!3d41.0053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9c2aa4a6b17%3A0x552d8ef6f441d15f!2sIstanbul!5e0!3m2!1sen!2str!4v1715784000000"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form id="contact-form" class="form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+              ></textarea>
+
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+
+        <script>
+          document
+            .getElementById("contact-form")
+            .addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              emailjs
+                .sendForm("service_om6lout", "template_mcya6qs", this)
+                .then(
+                  () => {
+                    alert("Message sent successfully!");
+                    this.reset(); // Clear form
+                  },
+                  (error) => {
+                    alert("Failed to send message: " + JSON.stringify(error));
+                  }
+                );
+            });
+        </script>
+      </div>
+    </main>
+
+    <!--Custom JS Link-->
+    <script src="./assets/js/script.js"></script>
+
+    <!--ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
